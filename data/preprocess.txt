@@ -1,0 +1,58 @@
+
+/dataset/original/java-sort
+
+Extracting paths from validation set...
+Finished extracting paths from validation set
+Extracting paths from test set...
+Finished extracting paths from test set
+Extracting paths from training set...
+Finished extracting paths from training set
+Creating histograms from the training data
+File: data/original/java-sort.test.txt
+Average total contexts: 1083.904593639576
+Average final (after sampling) contexts: 199.86277974087162
+Total examples: 1698
+Empty examples: 0
+Max number of contexts per word: 4263
+File: data/original/java-sort.val.txt
+Average total contexts: 760.8466257668712
+Average final (after sampling) contexts: 198.64417177914112
+Total examples: 163
+Empty examples: 0
+Max number of contexts per word: 4804
+File: data/original/java-sort.train.txt
+Average total contexts: 760.4294736842105
+Average final (after sampling) contexts: 199.56
+Total examples: 475
+Empty examples: 0
+Max number of contexts per word: 4875
+Dictionaries saved to: data/original/java-sort.dict.c2v
+
+/dataset/augmented/java-sort
+
+Extracting paths from validation set...
+Finished extracting paths from validation set
+Extracting paths from test set...
+Finished extracting paths from test set
+Extracting paths from training set...
+Finished extracting paths from training set
+Creating histograms from the training data
+File: data/augmented/java-sort.test.txt
+Average total contexts: 1083.904593639576
+Average final (after sampling) contexts: 199.86277974087162
+Total examples: 1698
+Empty examples: 0
+Max number of contexts per word: 4263
+File: data/augmented/java-sort.val.txt
+Average total contexts: 1174.74296875
+Average final (after sampling) contexts: 199.715625
+Total examples: 1280
+Empty examples: 0
+Max number of contexts per word: 4818
+File: data/augmented/java-sort.train.txt
+Average total contexts: 1114.5280088740988
+Average final (after sampling) contexts: 199.85884636716582
+Total examples: 3606
+Empty examples: 0
+Max number of contexts per word: 4879
+Dictionaries saved to: data/original+all/java-sort.dict.c2v

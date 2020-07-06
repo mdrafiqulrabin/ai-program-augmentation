@@ -1,0 +1,110 @@
+2020-07-19 23:16:50.480462: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-07-19 23:16:50.503784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:65:00.0
+2020-07-19 23:16:50.504006: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-07-19 23:16:50.505399: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-07-19 23:16:50.506708: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-07-19 23:16:50.506991: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-07-19 23:16:50.508638: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-19 23:16:50.509931: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-19 23:16:50.513678: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-19 23:16:50.515873: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-07-19 23:16:50.516260: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-07-19 23:16:50.523919: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2020-07-19 23:16:50.524941: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56424daafde0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-19 23:16:50.524965: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-19 23:16:50.613174: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56424db12ce0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-07-19 23:16:50.613213: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-PCIE-12GB, Compute Capability 6.0
+2020-07-19 23:16:50.614436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:65:00.0
+2020-07-19 23:16:50.614474: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-07-19 23:16:50.614486: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-07-19 23:16:50.614496: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-07-19 23:16:50.614507: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-07-19 23:16:50.614517: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-19 23:16:50.614527: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-19 23:16:50.614538: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-19 23:16:50.616587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-07-19 23:16:50.616617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-07-19 23:16:50.618256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-19 23:16:50.618276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-07-19 23:16:50.618285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-07-19 23:16:50.620524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11338 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:65:00.0, compute capability: 6.0)
+2020-07-19 23:16:50,622 INFO     
+2020-07-19 23:16:50,622 INFO     
+2020-07-19 23:16:50,622 INFO     ---------------------------------------------------------------------
+2020-07-19 23:16:50,622 INFO     ---------------------------------------------------------------------
+2020-07-19 23:16:50,622 INFO     ---------------------- Creating code2vec model ----------------------
+2020-07-19 23:16:50,622 INFO     ---------------------------------------------------------------------
+2020-07-19 23:16:50,622 INFO     ---------------------------------------------------------------------
+2020-07-19 23:16:50,622 INFO     Checking number of examples ...
+2020-07-19 23:16:50,622 INFO         Number of test examples: 1698
+2020-07-19 23:16:50,622 INFO     ---------------------------------------------------------------------
+2020-07-19 23:16:50,622 INFO     ----------------- Configuration - Hyper Parameters ------------------
+2020-07-19 23:16:50,622 INFO     CODE_VECTOR_SIZE                          384
+2020-07-19 23:16:50,622 INFO     CSV_BUFFER_SIZE                           104857600
+2020-07-19 23:16:50,622 INFO     DEFAULT_EMBEDDINGS_SIZE                   128
+2020-07-19 23:16:50,622 INFO     DL_FRAMEWORK                              tensorflow
+2020-07-19 23:16:50,622 INFO     DROPOUT_KEEP_RATE                         0.75
+2020-07-19 23:16:50,622 INFO     EXPORT_CODE_VECTORS                       False
+2020-07-19 23:16:50,622 INFO     LOGS_PATH                                 None
+2020-07-19 23:16:50,622 INFO     MAX_CONTEXTS                              200
+2020-07-19 23:16:50,622 INFO     MAX_PATH_VOCAB_SIZE                       911417
+2020-07-19 23:16:50,623 INFO     MAX_TARGET_VOCAB_SIZE                     261245
+2020-07-19 23:16:50,623 INFO     MAX_TOKEN_VOCAB_SIZE                      1301136
+2020-07-19 23:16:50,623 INFO     MAX_TO_KEEP                               51
+2020-07-19 23:16:50,623 INFO     MODEL_LOAD_PATH                           models/original/java-sort-model/saved_model_iter7
+2020-07-19 23:16:50,623 INFO     MODEL_SAVE_PATH                           None
+2020-07-19 23:16:50,623 INFO     NUM_BATCHES_TO_LOG_PROGRESS               100
+2020-07-19 23:16:50,623 INFO     NUM_TEST_EXAMPLES                         1698
+2020-07-19 23:16:50,623 INFO     NUM_TRAIN_BATCHES_TO_EVALUATE             1800
+2020-07-19 23:16:50,623 INFO     NUM_TRAIN_EPOCHS                          51
+2020-07-19 23:16:50,623 INFO     NUM_TRAIN_EXAMPLES                        0
+2020-07-19 23:16:50,623 INFO     PATH_EMBEDDINGS_SIZE                      128
+2020-07-19 23:16:50,623 INFO     PREDICT                                   False
+2020-07-19 23:16:50,623 INFO     READER_NUM_PARALLEL_BATCHES               6
+2020-07-19 23:16:50,623 INFO     RELEASE                                   False
+2020-07-19 23:16:50,623 INFO     SAVE_EVERY_EPOCHS                         1
+2020-07-19 23:16:50,623 INFO     SAVE_T2V                                  None
+2020-07-19 23:16:50,623 INFO     SAVE_W2V                                  None
+2020-07-19 23:16:50,623 INFO     SEPARATE_OOV_AND_PAD                      False
+2020-07-19 23:16:50,623 INFO     SHUFFLE_BUFFER_SIZE                       10000
+2020-07-19 23:16:50,623 INFO     TARGET_EMBEDDINGS_SIZE                    384
+2020-07-19 23:16:50,623 INFO     TEST_BATCH_SIZE                           32
+2020-07-19 23:16:50,623 INFO     TEST_DATA_PATH                            data/original/java-sort.test.c2v
+2020-07-19 23:16:50,623 INFO     TOKEN_EMBEDDINGS_SIZE                     128
+2020-07-19 23:16:50,623 INFO     TOP_K_WORDS_CONSIDERED_DURING_PREDICTION  10
+2020-07-19 23:16:50,623 INFO     TRAIN_BATCH_SIZE                          32
+2020-07-19 23:16:50,623 INFO     TRAIN_DATA_PATH_PREFIX                    None
+2020-07-19 23:16:50,623 INFO     USE_TENSORBOARD                           False
+2020-07-19 23:16:50,623 INFO     VERBOSE_MODE                              1
+2020-07-19 23:16:50,623 INFO     _Config__logger                           <Logger code2vec (INFO)>
+2020-07-19 23:16:50,623 INFO     context_vector_size                       384
+2020-07-19 23:16:50,623 INFO     entire_model_load_path                    models/original/java-sort-model/saved_model_iter7__entire-model
+2020-07-19 23:16:50,623 INFO     entire_model_save_path                    None
+2020-07-19 23:16:50,623 INFO     is_loading                                True
+2020-07-19 23:16:50,623 INFO     is_saving                                 False
+2020-07-19 23:16:50,623 INFO     is_testing                                True
+2020-07-19 23:16:50,623 INFO     is_training                               False
+2020-07-19 23:16:50,623 INFO     model_load_dir                            models/original/java-sort-model
+2020-07-19 23:16:50,624 INFO     model_weights_load_path                   models/original/java-sort-model/saved_model_iter7__only-weights
+2020-07-19 23:16:50,624 INFO     model_weights_save_path                   None
+2020-07-19 23:16:50,624 INFO     test_steps                                54
+2020-07-19 23:16:50,624 INFO     train_data_path                           None
+2020-07-19 23:16:50,624 INFO     train_steps_per_epoch                     0
+2020-07-19 23:16:50,624 INFO     word_freq_dict_path                       None
+2020-07-19 23:16:50,624 INFO     ---------------------------------------------------------------------
+2020-07-19 23:16:50,624 INFO     Loading model vocabularies from: `models/original/java-sort-model/dictionaries.bin` ... 
+2020-07-19 23:16:50,655 INFO     Done loading model vocabularies.
+2020-07-19 23:16:50,659 INFO     Done creating code2vec model
+2020-07-19 23:16:53,858 INFO     Initalized variables
+2020-07-19 23:16:53,858 INFO     Loading model weights from: models/original/java-sort-model/saved_model_iter7
+2020-07-19 23:16:53,937 INFO     Done loading model weights
+2020-07-19 23:16:54,129 INFO     Starting evaluation
+2020-07-19 23:16:54.181672: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-07-19 23:16:59,760 INFO     Done evaluating, epoch reached
+2020-07-19 23:16:59,760 INFO     Evaluation time: 0H:0M:9S
+2020-07-19 23:16:59,761 INFO     top10_acc: [0.90812721 0.95877503 0.96996466 0.9770318  0.98704358 0.99057715
+ 0.99469965 0.99705536 0.99764429 1.        ], precision: 0.9081272084805654, recall: 0.9081272084805654, F1: 0.9081272084805654

@@ -1,0 +1,477 @@
+2020-07-19 20:53:35.948016: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-07-19 20:53:35.971717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:65:00.0
+2020-07-19 20:53:35.971928: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-07-19 20:53:35.973243: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-07-19 20:53:35.974472: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-07-19 20:53:35.974735: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-07-19 20:53:35.976303: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-19 20:53:35.977516: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-19 20:53:35.981094: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-19 20:53:35.983255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-07-19 20:53:35.983608: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-07-19 20:53:35.991632: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2020-07-19 20:53:35.993324: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56391b153510 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-19 20:53:35.993347: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-19 20:53:36.074450: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56391b1b6490 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-07-19 20:53:36.074486: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-PCIE-12GB, Compute Capability 6.0
+2020-07-19 20:53:36.075704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:65:00.0
+2020-07-19 20:53:36.075741: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-07-19 20:53:36.075753: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-07-19 20:53:36.075764: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-07-19 20:53:36.075774: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-07-19 20:53:36.075785: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-19 20:53:36.075795: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-19 20:53:36.075810: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-19 20:53:36.077930: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-07-19 20:53:36.077958: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-07-19 20:53:36.079532: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-19 20:53:36.079552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-07-19 20:53:36.079561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-07-19 20:53:36.081730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11338 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:65:00.0, compute capability: 6.0)
+2020-07-19 20:53:36,083 INFO     
+2020-07-19 20:53:36,084 INFO     
+2020-07-19 20:53:36,084 INFO     ---------------------------------------------------------------------
+2020-07-19 20:53:36,084 INFO     ---------------------------------------------------------------------
+2020-07-19 20:53:36,084 INFO     ---------------------- Creating code2vec model ----------------------
+2020-07-19 20:53:36,084 INFO     ---------------------------------------------------------------------
+2020-07-19 20:53:36,084 INFO     ---------------------------------------------------------------------
+2020-07-19 20:53:36,084 INFO     Checking number of examples ...
+2020-07-19 20:53:36,084 INFO         Number of train examples: 3606
+2020-07-19 20:53:36,084 INFO         Number of test examples: 1280
+2020-07-19 20:53:36,084 INFO     ---------------------------------------------------------------------
+2020-07-19 20:53:36,084 INFO     ----------------- Configuration - Hyper Parameters ------------------
+2020-07-19 20:53:36,084 INFO     CODE_VECTOR_SIZE                          384
+2020-07-19 20:53:36,084 INFO     CSV_BUFFER_SIZE                           104857600
+2020-07-19 20:53:36,084 INFO     DEFAULT_EMBEDDINGS_SIZE                   128
+2020-07-19 20:53:36,084 INFO     DL_FRAMEWORK                              tensorflow
+2020-07-19 20:53:36,084 INFO     DROPOUT_KEEP_RATE                         0.75
+2020-07-19 20:53:36,084 INFO     EXPORT_CODE_VECTORS                       False
+2020-07-19 20:53:36,084 INFO     LOGS_PATH                                 None
+2020-07-19 20:53:36,084 INFO     MAX_CONTEXTS                              200
+2020-07-19 20:53:36,084 INFO     MAX_PATH_VOCAB_SIZE                       911417
+2020-07-19 20:53:36,084 INFO     MAX_TARGET_VOCAB_SIZE                     261245
+2020-07-19 20:53:36,084 INFO     MAX_TOKEN_VOCAB_SIZE                      1301136
+2020-07-19 20:53:36,084 INFO     MAX_TO_KEEP                               51
+2020-07-19 20:53:36,085 INFO     MODEL_LOAD_PATH                           None
+2020-07-19 20:53:36,085 INFO     MODEL_SAVE_PATH                           models/augmented/java-sort-model/saved_model
+2020-07-19 20:53:36,085 INFO     NUM_BATCHES_TO_LOG_PROGRESS               100
+2020-07-19 20:53:36,085 INFO     NUM_TEST_EXAMPLES                         1280
+2020-07-19 20:53:36,085 INFO     NUM_TRAIN_BATCHES_TO_EVALUATE             1800
+2020-07-19 20:53:36,085 INFO     NUM_TRAIN_EPOCHS                          51
+2020-07-19 20:53:36,085 INFO     NUM_TRAIN_EXAMPLES                        3606
+2020-07-19 20:53:36,085 INFO     PATH_EMBEDDINGS_SIZE                      128
+2020-07-19 20:53:36,085 INFO     PREDICT                                   False
+2020-07-19 20:53:36,085 INFO     READER_NUM_PARALLEL_BATCHES               6
+2020-07-19 20:53:36,085 INFO     RELEASE                                   False
+2020-07-19 20:53:36,085 INFO     SAVE_EVERY_EPOCHS                         1
+2020-07-19 20:53:36,085 INFO     SAVE_T2V                                  None
+2020-07-19 20:53:36,085 INFO     SAVE_W2V                                  None
+2020-07-19 20:53:36,085 INFO     SEPARATE_OOV_AND_PAD                      False
+2020-07-19 20:53:36,085 INFO     SHUFFLE_BUFFER_SIZE                       10000
+2020-07-19 20:53:36,085 INFO     TARGET_EMBEDDINGS_SIZE                    384
+2020-07-19 20:53:36,085 INFO     TEST_BATCH_SIZE                           32
+2020-07-19 20:53:36,085 INFO     TEST_DATA_PATH                            data/augmented/java-sort.val.c2v
+2020-07-19 20:53:36,085 INFO     TOKEN_EMBEDDINGS_SIZE                     128
+2020-07-19 20:53:36,085 INFO     TOP_K_WORDS_CONSIDERED_DURING_PREDICTION  10
+2020-07-19 20:53:36,085 INFO     TRAIN_BATCH_SIZE                          32
+2020-07-19 20:53:36,085 INFO     TRAIN_DATA_PATH_PREFIX                    data/augmented/java-sort
+2020-07-19 20:53:36,085 INFO     USE_TENSORBOARD                           False
+2020-07-19 20:53:36,085 INFO     VERBOSE_MODE                              1
+2020-07-19 20:53:36,085 INFO     _Config__logger                           <Logger code2vec (INFO)>
+2020-07-19 20:53:36,085 INFO     context_vector_size                       384
+2020-07-19 20:53:36,085 INFO     entire_model_load_path                    None
+2020-07-19 20:53:36,085 INFO     entire_model_save_path                    models/augmented/java-sort-model/saved_model__entire-model
+2020-07-19 20:53:36,085 INFO     is_loading                                False
+2020-07-19 20:53:36,085 INFO     is_saving                                 True
+2020-07-19 20:53:36,085 INFO     is_testing                                True
+2020-07-19 20:53:36,085 INFO     is_training                               True
+2020-07-19 20:53:36,085 INFO     model_load_dir                            None
+2020-07-19 20:53:36,085 INFO     model_weights_load_path                   None
+2020-07-19 20:53:36,085 INFO     model_weights_save_path                   models/augmented/java-sort-model/saved_model__only-weights
+2020-07-19 20:53:36,085 INFO     test_steps                                40
+2020-07-19 20:53:36,086 INFO     train_data_path                           data/augmented/java-sort.train.c2v
+2020-07-19 20:53:36,086 INFO     train_steps_per_epoch                     113
+2020-07-19 20:53:36,086 INFO     word_freq_dict_path                       data/augmented/java-sort.dict.c2v
+2020-07-19 20:53:36,086 INFO     ---------------------------------------------------------------------
+2020-07-19 20:53:36,086 INFO     Loading word frequencies dictionaries from: data/augmented/java-sort.dict.c2v ...
+2020-07-19 20:53:36,102 INFO     Done loading word frequencies dictionaries.
+2020-07-19 20:53:36,102 INFO     Word frequencies dictionaries loaded. Now creating vocabularies.
+2020-07-19 20:53:36,102 INFO     Created token vocab. size: 1660
+2020-07-19 20:53:36,136 INFO     Created path vocab. size: 68910
+2020-07-19 20:53:36,136 INFO     Created target vocab. size: 11
+2020-07-19 20:53:36,140 INFO     Done creating code2vec model
+2020-07-19 20:53:36,140 INFO     Starting training
+2020-07-19 20:53:38,371 INFO     Number of trainable params: 9185024
+2020-07-19 20:53:38,371 INFO     variable name: model/WORDS_VOCAB:0 -- shape: (1660, 128) -- #params: 212480
+2020-07-19 20:53:38,371 INFO     variable name: model/TARGET_WORDS_VOCAB:0 -- shape: (11, 384) -- #params: 4224
+2020-07-19 20:53:38,371 INFO     variable name: model/ATTENTION:0 -- shape: (384, 1) -- #params: 384
+2020-07-19 20:53:38,371 INFO     variable name: model/PATHS_VOCAB:0 -- shape: (68910, 128) -- #params: 8820480
+2020-07-19 20:53:38,371 INFO     variable name: model/TRANSFORM:0 -- shape: (384, 384) -- #params: 147456
+2020-07-19 20:53:39,655 INFO     Initalized variables
+2020-07-19 20:53:40,859 INFO     Started reader...
+2020-07-19 20:53:41.005434: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-07-19 20:53:52,600 INFO     Average loss at batch 100: 0.037556, 	throughput: 194 samples/sec
+2020-07-19 20:53:54,249 INFO     Saved after 1 epochs in: models/augmented/java-sort-model/saved_model_iter1
+2020-07-19 20:53:54,885 INFO     Starting evaluation
+2020-07-19 20:53:58,968 INFO     Done evaluating, epoch reached
+2020-07-19 20:53:58,969 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:53:58,969 INFO     After 1 epochs -- top10_acc: [0.83359375 0.90859375 0.95546875 0.96953125 0.98125    0.98515625
+ 0.99453125 0.99609375 0.99921875 1.        ], precision: 0.83359375, recall: 0.83359375, F1: 0.83359375
+2020-07-19 20:54:07,886 INFO     Average loss at batch 200: 0.003592, 	throughput: 209 samples/sec
+2020-07-19 20:54:10,774 INFO     Saved after 2 epochs in: models/augmented/java-sort-model/saved_model_iter2
+2020-07-19 20:54:10,840 INFO     Starting evaluation
+2020-07-19 20:54:14,850 INFO     Done evaluating, epoch reached
+2020-07-19 20:54:14,851 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:54:14,851 INFO     After 2 epochs -- top10_acc: [0.878125   0.94296875 0.96953125 0.98125    0.98984375 0.99296875
+ 0.9953125  0.996875   0.99921875 0.99921875], precision: 0.878125, recall: 0.878125, F1: 0.878125
+2020-07-19 20:54:22,387 INFO     Average loss at batch 300: 0.000633, 	throughput: 220 samples/sec
+2020-07-19 20:54:26,632 INFO     Saved after 3 epochs in: models/augmented/java-sort-model/saved_model_iter3
+2020-07-19 20:54:26,698 INFO     Starting evaluation
+2020-07-19 20:54:30,714 INFO     Done evaluating, epoch reached
+2020-07-19 20:54:30,715 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:54:30,715 INFO     After 3 epochs -- top10_acc: [0.8890625  0.95390625 0.96875    0.9828125  0.9875     0.99140625
+ 0.9953125  0.9953125  0.99921875 0.99921875], precision: 0.8890625, recall: 0.8890625, F1: 0.8890625
+2020-07-19 20:54:36,953 INFO     Average loss at batch 400: 0.000198, 	throughput: 219 samples/sec
+2020-07-19 20:54:42,501 INFO     Saved after 4 epochs in: models/augmented/java-sort-model/saved_model_iter4
+2020-07-19 20:54:42,566 INFO     Starting evaluation
+2020-07-19 20:54:46,584 INFO     Done evaluating, epoch reached
+2020-07-19 20:54:46,585 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:54:46,586 INFO     After 4 epochs -- top10_acc: [0.89140625 0.9484375  0.96796875 0.984375   0.98828125 0.99296875
+ 0.996875   0.9984375  1.         1.        ], precision: 0.89140625, recall: 0.89140625, F1: 0.89140625
+2020-07-19 20:54:51,532 INFO     Average loss at batch 500: 0.000084, 	throughput: 219 samples/sec
+2020-07-19 20:54:58,367 INFO     Saved after 5 epochs in: models/augmented/java-sort-model/saved_model_iter5
+2020-07-19 20:54:58,433 INFO     Starting evaluation
+2020-07-19 20:55:02,467 INFO     Done evaluating, epoch reached
+2020-07-19 20:55:02,468 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:55:02,468 INFO     After 5 epochs -- top10_acc: [0.90234375 0.95546875 0.971875   0.98125    0.98828125 0.99296875
+ 0.9953125  0.99609375 0.9984375  0.99921875], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:55:06,038 INFO     Average loss at batch 600: 0.000097, 	throughput: 220 samples/sec
+2020-07-19 20:55:14,247 INFO     Saved after 6 epochs in: models/augmented/java-sort-model/saved_model_iter6
+2020-07-19 20:55:14,313 INFO     Starting evaluation
+2020-07-19 20:55:18,358 INFO     Done evaluating, epoch reached
+2020-07-19 20:55:18,359 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:55:18,359 INFO     After 6 epochs -- top10_acc: [0.9015625  0.95546875 0.97578125 0.98046875 0.9875     0.99375
+ 0.9953125  0.99609375 1.         1.        ], precision: 0.9015625, recall: 0.9015625, F1: 0.9015625
+2020-07-19 20:55:20,630 INFO     Average loss at batch 700: 0.000031, 	throughput: 219 samples/sec
+2020-07-19 20:55:30,131 INFO     Saved after 7 epochs in: models/augmented/java-sort-model/saved_model_iter7
+2020-07-19 20:55:30,198 INFO     Starting evaluation
+2020-07-19 20:55:34,203 INFO     Done evaluating, epoch reached
+2020-07-19 20:55:34,204 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:55:34,204 INFO     After 7 epochs -- top10_acc: [0.90078125 0.95546875 0.97265625 0.98125    0.98671875 0.99296875
+ 0.99453125 0.996875   1.         1.        ], precision: 0.90078125, recall: 0.90078125, F1: 0.90078125
+2020-07-19 20:55:35,101 INFO     Average loss at batch 800: 0.000020, 	throughput: 221 samples/sec
+2020-07-19 20:55:45,361 INFO     Average loss at batch 900: 0.000014, 	throughput: 311 samples/sec
+2020-07-19 20:55:45,969 INFO     Saved after 8 epochs in: models/augmented/java-sort-model/saved_model_iter8
+2020-07-19 20:55:46,036 INFO     Starting evaluation
+2020-07-19 20:55:50,057 INFO     Done evaluating, epoch reached
+2020-07-19 20:55:50,058 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:55:50,058 INFO     After 8 epochs -- top10_acc: [0.90234375 0.95546875 0.9734375  0.9828125  0.98671875 0.99296875
+ 0.99453125 0.99609375 1.         1.        ], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:55:59,827 INFO     Average loss at batch 1000: 0.000011, 	throughput: 221 samples/sec
+2020-07-19 20:56:01,804 INFO     Saved after 9 epochs in: models/augmented/java-sort-model/saved_model_iter9
+2020-07-19 20:56:01,870 INFO     Starting evaluation
+2020-07-19 20:56:05,923 INFO     Done evaluating, epoch reached
+2020-07-19 20:56:05,924 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:56:05,924 INFO     After 9 epochs -- top10_acc: [0.90546875 0.9546875  0.97421875 0.98203125 0.9875     0.99296875
+ 0.9953125  0.99765625 1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 20:56:14,396 INFO     Average loss at batch 1100: 0.000008, 	throughput: 219 samples/sec
+2020-07-19 20:56:17,658 INFO     Saved after 10 epochs in: models/augmented/java-sort-model/saved_model_iter10
+2020-07-19 20:56:17,724 INFO     Starting evaluation
+2020-07-19 20:56:21,726 INFO     Done evaluating, epoch reached
+2020-07-19 20:56:21,727 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:56:21,727 INFO     After 10 epochs -- top10_acc: [0.90390625 0.953125   0.97265625 0.98046875 0.98828125 0.99296875
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 20:56:28,916 INFO     Average loss at batch 1200: 0.000007, 	throughput: 220 samples/sec
+2020-07-19 20:56:33,483 INFO     Saved after 11 epochs in: models/augmented/java-sort-model/saved_model_iter11
+2020-07-19 20:56:33,549 INFO     Starting evaluation
+2020-07-19 20:56:37,559 INFO     Done evaluating, epoch reached
+2020-07-19 20:56:37,560 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:56:37,561 INFO     After 11 epochs -- top10_acc: [0.90234375 0.953125   0.971875   0.98203125 0.9875     0.99375
+ 0.9953125  0.99765625 1.         1.        ], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:56:43,383 INFO     Average loss at batch 1300: 0.000005, 	throughput: 221 samples/sec
+2020-07-19 20:56:49,304 INFO     Saved after 12 epochs in: models/augmented/java-sort-model/saved_model_iter12
+2020-07-19 20:56:49,370 INFO     Starting evaluation
+2020-07-19 20:56:53,377 INFO     Done evaluating, epoch reached
+2020-07-19 20:56:53,378 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:56:53,378 INFO     After 12 epochs -- top10_acc: [0.90234375 0.9515625  0.96875    0.98125    0.98671875 0.99296875
+ 0.99609375 0.99765625 1.         1.        ], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:56:57,904 INFO     Average loss at batch 1400: 0.000006, 	throughput: 220 samples/sec
+2020-07-19 20:57:05,132 INFO     Saved after 13 epochs in: models/augmented/java-sort-model/saved_model_iter13
+2020-07-19 20:57:05,198 INFO     Starting evaluation
+2020-07-19 20:57:09,215 INFO     Done evaluating, epoch reached
+2020-07-19 20:57:09,216 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:57:09,217 INFO     After 13 epochs -- top10_acc: [0.90078125 0.95078125 0.9703125  0.97890625 0.9875     0.99375
+ 0.99609375 0.99765625 1.         1.        ], precision: 0.90078125, recall: 0.90078125, F1: 0.90078125
+2020-07-19 20:57:12,388 INFO     Average loss at batch 1500: 0.000004, 	throughput: 220 samples/sec
+2020-07-19 20:57:20,991 INFO     Saved after 14 epochs in: models/augmented/java-sort-model/saved_model_iter14
+2020-07-19 20:57:21,057 INFO     Starting evaluation
+2020-07-19 20:57:25,070 INFO     Done evaluating, epoch reached
+2020-07-19 20:57:25,070 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:57:25,071 INFO     After 14 epochs -- top10_acc: [0.9015625  0.95078125 0.97109375 0.98046875 0.9875     0.99375
+ 0.99609375 0.99765625 1.         1.        ], precision: 0.9015625, recall: 0.9015625, F1: 0.9015625
+2020-07-19 20:57:26,938 INFO     Average loss at batch 1600: 0.000004, 	throughput: 219 samples/sec
+2020-07-19 20:57:36,828 INFO     Saved after 15 epochs in: models/augmented/java-sort-model/saved_model_iter15
+2020-07-19 20:57:36,894 INFO     Starting evaluation
+2020-07-19 20:57:40,910 INFO     Done evaluating, epoch reached
+2020-07-19 20:57:40,911 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:57:40,911 INFO     After 15 epochs -- top10_acc: [0.90078125 0.95078125 0.97109375 0.98046875 0.9875     0.99375
+ 0.99609375 0.99765625 1.         1.        ], precision: 0.90078125, recall: 0.90078125, F1: 0.90078125
+2020-07-19 20:57:41,482 INFO     Average loss at batch 1700: 0.000003, 	throughput: 220 samples/sec
+2020-07-19 20:57:51,646 INFO     Average loss at batch 1800: 0.000003, 	throughput: 314 samples/sec
+2020-07-19 20:57:52,651 INFO     Saved after 16 epochs in: models/augmented/java-sort-model/saved_model_iter16
+2020-07-19 20:57:52,717 INFO     Starting evaluation
+2020-07-19 20:57:56,742 INFO     Done evaluating, epoch reached
+2020-07-19 20:57:56,743 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:57:56,743 INFO     After 16 epochs -- top10_acc: [0.90390625 0.953125   0.96953125 0.9828125  0.9875     0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 20:58:06,120 INFO     Average loss at batch 1900: 0.000003, 	throughput: 221 samples/sec
+2020-07-19 20:58:08,511 INFO     Saved after 17 epochs in: models/augmented/java-sort-model/saved_model_iter17
+2020-07-19 20:58:08,577 INFO     Starting evaluation
+2020-07-19 20:58:12,577 INFO     Done evaluating, epoch reached
+2020-07-19 20:58:12,578 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:58:12,578 INFO     After 17 epochs -- top10_acc: [0.90390625 0.953125   0.97265625 0.9828125  0.98671875 0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 20:58:20,675 INFO     Average loss at batch 2000: 0.000002, 	throughput: 219 samples/sec
+2020-07-19 20:58:24,344 INFO     Saved after 18 epochs in: models/augmented/java-sort-model/saved_model_iter18
+2020-07-19 20:58:24,410 INFO     Starting evaluation
+2020-07-19 20:58:28,496 INFO     Done evaluating, epoch reached
+2020-07-19 20:58:28,497 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:58:28,497 INFO     After 18 epochs -- top10_acc: [0.90234375 0.953125   0.97109375 0.98125    0.9859375  0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:58:35,200 INFO     Average loss at batch 2100: 0.000002, 	throughput: 220 samples/sec
+2020-07-19 20:58:40,150 INFO     Saved after 19 epochs in: models/augmented/java-sort-model/saved_model_iter19
+2020-07-19 20:58:40,216 INFO     Starting evaluation
+2020-07-19 20:58:44,295 INFO     Done evaluating, epoch reached
+2020-07-19 20:58:44,296 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:58:44,296 INFO     After 19 epochs -- top10_acc: [0.9015625  0.953125   0.96953125 0.98125    0.9859375  0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.9015625, recall: 0.9015625, F1: 0.9015625
+2020-07-19 20:58:49,655 INFO     Average loss at batch 2200: 0.000002, 	throughput: 221 samples/sec
+2020-07-19 20:58:55,991 INFO     Saved after 20 epochs in: models/augmented/java-sort-model/saved_model_iter20
+2020-07-19 20:58:56,057 INFO     Starting evaluation
+2020-07-19 20:59:00,142 INFO     Done evaluating, epoch reached
+2020-07-19 20:59:00,143 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:59:00,143 INFO     After 20 epochs -- top10_acc: [0.90234375 0.95234375 0.96875    0.98046875 0.9859375  0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:59:04,198 INFO     Average loss at batch 2300: 0.000002, 	throughput: 220 samples/sec
+2020-07-19 20:59:11,818 INFO     Saved after 21 epochs in: models/augmented/java-sort-model/saved_model_iter21
+2020-07-19 20:59:11,884 INFO     Starting evaluation
+2020-07-19 20:59:15,978 INFO     Done evaluating, epoch reached
+2020-07-19 20:59:15,979 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:59:15,979 INFO     After 21 epochs -- top10_acc: [0.90234375 0.95234375 0.96875    0.98046875 0.9859375  0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.90234375, recall: 0.90234375, F1: 0.90234375
+2020-07-19 20:59:18,668 INFO     Average loss at batch 2400: 0.000001, 	throughput: 221 samples/sec
+2020-07-19 20:59:27,658 INFO     Saved after 22 epochs in: models/augmented/java-sort-model/saved_model_iter22
+2020-07-19 20:59:27,724 INFO     Starting evaluation
+2020-07-19 20:59:31,800 INFO     Done evaluating, epoch reached
+2020-07-19 20:59:31,801 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:59:31,801 INFO     After 22 epochs -- top10_acc: [0.903125   0.95234375 0.96875    0.98046875 0.9859375  0.99375
+ 0.996875   0.99921875 1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 20:59:33,196 INFO     Average loss at batch 2500: 0.000001, 	throughput: 220 samples/sec
+2020-07-19 20:59:43,596 INFO     Saved after 23 epochs in: models/augmented/java-sort-model/saved_model_iter23
+2020-07-19 20:59:43,663 INFO     Starting evaluation
+2020-07-19 20:59:47,733 INFO     Done evaluating, epoch reached
+2020-07-19 20:59:47,733 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 20:59:47,734 INFO     After 23 epochs -- top10_acc: [0.903125   0.95234375 0.96796875 0.98046875 0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 20:59:47,835 INFO     Average loss at batch 2600: 0.000001, 	throughput: 218 samples/sec
+2020-07-19 20:59:58,006 INFO     Average loss at batch 2700: 0.000001, 	throughput: 314 samples/sec
+2020-07-19 20:59:59,402 INFO     Saved after 24 epochs in: models/augmented/java-sort-model/saved_model_iter24
+2020-07-19 20:59:59,467 INFO     Starting evaluation
+2020-07-19 21:00:03,564 INFO     Done evaluating, epoch reached
+2020-07-19 21:00:03,565 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:00:03,565 INFO     After 24 epochs -- top10_acc: [0.903125   0.95234375 0.96796875 0.98046875 0.9875     0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 21:00:12,544 INFO     Average loss at batch 2800: 0.000001, 	throughput: 220 samples/sec
+2020-07-19 21:00:15,240 INFO     Saved after 25 epochs in: models/augmented/java-sort-model/saved_model_iter25
+2020-07-19 21:00:15,306 INFO     Starting evaluation
+2020-07-19 21:00:19,418 INFO     Done evaluating, epoch reached
+2020-07-19 21:00:19,419 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:00:19,419 INFO     After 25 epochs -- top10_acc: [0.90390625 0.95234375 0.9671875  0.98046875 0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 21:00:27,033 INFO     Average loss at batch 2900: 0.000001, 	throughput: 220 samples/sec
+2020-07-19 21:00:31,092 INFO     Saved after 26 epochs in: models/augmented/java-sort-model/saved_model_iter26
+2020-07-19 21:00:31,158 INFO     Starting evaluation
+2020-07-19 21:00:35,273 INFO     Done evaluating, epoch reached
+2020-07-19 21:00:35,274 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:00:35,275 INFO     After 26 epochs -- top10_acc: [0.90390625 0.95234375 0.96640625 0.98125    0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 21:00:41,595 INFO     Average loss at batch 3000: 0.000001, 	throughput: 219 samples/sec
+2020-07-19 21:00:46,947 INFO     Saved after 27 epochs in: models/augmented/java-sort-model/saved_model_iter27
+2020-07-19 21:00:47,013 INFO     Starting evaluation
+2020-07-19 21:00:51,128 INFO     Done evaluating, epoch reached
+2020-07-19 21:00:51,129 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:00:51,129 INFO     After 27 epochs -- top10_acc: [0.903125   0.95234375 0.96875    0.98125    0.98515625 0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 21:00:56,079 INFO     Average loss at batch 3100: 0.000001, 	throughput: 220 samples/sec
+2020-07-19 21:01:02,904 INFO     Saved after 28 epochs in: models/augmented/java-sort-model/saved_model_iter28
+2020-07-19 21:01:02,971 INFO     Starting evaluation
+2020-07-19 21:01:06,991 INFO     Done evaluating, epoch reached
+2020-07-19 21:01:06,992 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:01:06,992 INFO     After 28 epochs -- top10_acc: [0.903125   0.95234375 0.96875    0.98125    0.98515625 0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 21:01:10,650 INFO     Average loss at batch 3200: 0.000001, 	throughput: 219 samples/sec
+2020-07-19 21:01:18,763 INFO     Saved after 29 epochs in: models/augmented/java-sort-model/saved_model_iter29
+2020-07-19 21:01:18,829 INFO     Starting evaluation
+2020-07-19 21:01:22,851 INFO     Done evaluating, epoch reached
+2020-07-19 21:01:22,852 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:01:22,852 INFO     After 29 epochs -- top10_acc: [0.903125   0.953125   0.96953125 0.98125    0.98515625 0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 21:01:25,220 INFO     Average loss at batch 3300: 0.000001, 	throughput: 219 samples/sec
+2020-07-19 21:01:34,627 INFO     Saved after 30 epochs in: models/augmented/java-sort-model/saved_model_iter30
+2020-07-19 21:01:34,693 INFO     Starting evaluation
+2020-07-19 21:01:38,729 INFO     Done evaluating, epoch reached
+2020-07-19 21:01:38,730 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:01:38,730 INFO     After 30 epochs -- top10_acc: [0.90390625 0.953125   0.96953125 0.98203125 0.98515625 0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 21:01:39,725 INFO     Average loss at batch 3400: 0.000001, 	throughput: 220 samples/sec
+2020-07-19 21:01:49,982 INFO     Average loss at batch 3500: 0.000001, 	throughput: 311 samples/sec
+2020-07-19 21:01:50,489 INFO     Saved after 31 epochs in: models/augmented/java-sort-model/saved_model_iter31
+2020-07-19 21:01:50,555 INFO     Starting evaluation
+2020-07-19 21:01:54,593 INFO     Done evaluating, epoch reached
+2020-07-19 21:01:54,594 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:01:54,595 INFO     After 31 epochs -- top10_acc: [0.90546875 0.95234375 0.96953125 0.98203125 0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 21:02:04,486 INFO     Average loss at batch 3600: 0.000001, 	throughput: 220 samples/sec
+2020-07-19 21:02:06,358 INFO     Saved after 32 epochs in: models/augmented/java-sort-model/saved_model_iter32
+2020-07-19 21:02:06,424 INFO     Starting evaluation
+2020-07-19 21:02:10,445 INFO     Done evaluating, epoch reached
+2020-07-19 21:02:10,445 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:02:10,446 INFO     After 32 epochs -- top10_acc: [0.90546875 0.95234375 0.96953125 0.98046875 0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 21:02:19,037 INFO     Average loss at batch 3700: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:02:22,207 INFO     Saved after 33 epochs in: models/augmented/java-sort-model/saved_model_iter33
+2020-07-19 21:02:22,272 INFO     Starting evaluation
+2020-07-19 21:02:26,306 INFO     Done evaluating, epoch reached
+2020-07-19 21:02:26,307 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:02:26,307 INFO     After 33 epochs -- top10_acc: [0.90625    0.95234375 0.9703125  0.98046875 0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90625, recall: 0.90625, F1: 0.90625
+2020-07-19 21:02:33,521 INFO     Average loss at batch 3800: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:02:38,072 INFO     Saved after 34 epochs in: models/augmented/java-sort-model/saved_model_iter34
+2020-07-19 21:02:38,138 INFO     Starting evaluation
+2020-07-19 21:02:42,159 INFO     Done evaluating, epoch reached
+2020-07-19 21:02:42,160 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:02:42,161 INFO     After 34 epochs -- top10_acc: [0.9046875  0.95234375 0.97109375 0.98125    0.9859375  0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.9046875, recall: 0.9046875, F1: 0.9046875
+2020-07-19 21:02:48,090 INFO     Average loss at batch 3900: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:02:53,928 INFO     Saved after 35 epochs in: models/augmented/java-sort-model/saved_model_iter35
+2020-07-19 21:02:53,995 INFO     Starting evaluation
+2020-07-19 21:02:58,015 INFO     Done evaluating, epoch reached
+2020-07-19 21:02:58,016 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:02:58,016 INFO     After 35 epochs -- top10_acc: [0.90546875 0.95234375 0.97109375 0.98125    0.9859375  0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 21:03:02,657 INFO     Average loss at batch 4000: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:03:09,790 INFO     Saved after 36 epochs in: models/augmented/java-sort-model/saved_model_iter36
+2020-07-19 21:03:09,855 INFO     Starting evaluation
+2020-07-19 21:03:13,914 INFO     Done evaluating, epoch reached
+2020-07-19 21:03:13,915 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:03:13,915 INFO     After 36 epochs -- top10_acc: [0.90546875 0.95234375 0.97109375 0.98125    0.98671875 0.99375
+ 0.99609375 0.9984375  1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 21:03:17,183 INFO     Average loss at batch 4100: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:03:25,698 INFO     Saved after 37 epochs in: models/augmented/java-sort-model/saved_model_iter37
+2020-07-19 21:03:25,764 INFO     Starting evaluation
+2020-07-19 21:03:29,792 INFO     Done evaluating, epoch reached
+2020-07-19 21:03:29,793 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:03:29,794 INFO     After 37 epochs -- top10_acc: [0.90625    0.95234375 0.97109375 0.98125    0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90625, recall: 0.90625, F1: 0.90625
+2020-07-19 21:03:31,763 INFO     Average loss at batch 4200: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:03:41,554 INFO     Saved after 38 epochs in: models/augmented/java-sort-model/saved_model_iter38
+2020-07-19 21:03:41,620 INFO     Starting evaluation
+2020-07-19 21:03:45,673 INFO     Done evaluating, epoch reached
+2020-07-19 21:03:45,674 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:03:45,674 INFO     After 38 epochs -- top10_acc: [0.90703125 0.95390625 0.97109375 0.98125    0.98671875 0.99375
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90703125, recall: 0.90703125, F1: 0.90703125
+2020-07-19 21:03:46,273 INFO     Average loss at batch 4300: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:03:56,559 INFO     Average loss at batch 4400: 0.000000, 	throughput: 311 samples/sec
+2020-07-19 21:03:57,460 INFO     Saved after 39 epochs in: models/augmented/java-sort-model/saved_model_iter39
+2020-07-19 21:03:57,526 INFO     Starting evaluation
+2020-07-19 21:04:01,579 INFO     Done evaluating, epoch reached
+2020-07-19 21:04:01,580 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:04:01,581 INFO     After 39 epochs -- top10_acc: [0.903125   0.9515625  0.9703125  0.98203125 0.98671875 0.99375
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.903125, recall: 0.903125, F1: 0.903125
+2020-07-19 21:04:11,083 INFO     Average loss at batch 4500: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:04:13,357 INFO     Saved after 40 epochs in: models/augmented/java-sort-model/saved_model_iter40
+2020-07-19 21:04:13,423 INFO     Starting evaluation
+2020-07-19 21:04:17,459 INFO     Done evaluating, epoch reached
+2020-07-19 21:04:17,460 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:04:17,461 INFO     After 40 epochs -- top10_acc: [0.90546875 0.9515625  0.96953125 0.98125    0.98671875 0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 21:04:25,650 INFO     Average loss at batch 4600: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:04:29,225 INFO     Saved after 41 epochs in: models/augmented/java-sort-model/saved_model_iter41
+2020-07-19 21:04:29,291 INFO     Starting evaluation
+2020-07-19 21:04:33,319 INFO     Done evaluating, epoch reached
+2020-07-19 21:04:33,320 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:04:33,320 INFO     After 41 epochs -- top10_acc: [0.90546875 0.95234375 0.96953125 0.98046875 0.98671875 0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.90546875, recall: 0.90546875, F1: 0.90546875
+2020-07-19 21:04:40,153 INFO     Average loss at batch 4700: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:04:45,096 INFO     Saved after 42 epochs in: models/augmented/java-sort-model/saved_model_iter42
+2020-07-19 21:04:45,162 INFO     Starting evaluation
+2020-07-19 21:04:49,200 INFO     Done evaluating, epoch reached
+2020-07-19 21:04:49,201 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:04:49,201 INFO     After 42 epochs -- top10_acc: [0.90390625 0.9515625  0.96875    0.98046875 0.98671875 0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 21:04:54,725 INFO     Average loss at batch 4800: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:05:00,957 INFO     Saved after 43 epochs in: models/augmented/java-sort-model/saved_model_iter43
+2020-07-19 21:05:01,023 INFO     Starting evaluation
+2020-07-19 21:05:05,063 INFO     Done evaluating, epoch reached
+2020-07-19 21:05:05,064 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:05:05,064 INFO     After 43 epochs -- top10_acc: [0.90390625 0.9515625  0.96875    0.98125    0.98671875 0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.90390625, recall: 0.90390625, F1: 0.9039062499999999
+2020-07-19 21:05:09,297 INFO     Average loss at batch 4900: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:05:16,827 INFO     Saved after 44 epochs in: models/augmented/java-sort-model/saved_model_iter44
+2020-07-19 21:05:16,894 INFO     Starting evaluation
+2020-07-19 21:05:20,925 INFO     Done evaluating, epoch reached
+2020-07-19 21:05:20,926 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:05:20,926 INFO     After 44 epochs -- top10_acc: [0.9046875  0.95078125 0.96875    0.98046875 0.98671875 0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.9046875, recall: 0.9046875, F1: 0.9046875
+2020-07-19 21:05:23,787 INFO     Average loss at batch 5000: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:05:32,697 INFO     Saved after 45 epochs in: models/augmented/java-sort-model/saved_model_iter45
+2020-07-19 21:05:32,763 INFO     Starting evaluation
+2020-07-19 21:05:36,790 INFO     Done evaluating, epoch reached
+2020-07-19 21:05:36,791 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:05:36,791 INFO     After 45 epochs -- top10_acc: [0.9046875  0.95078125 0.96875    0.98046875 0.9859375  0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.9046875, recall: 0.9046875, F1: 0.9046875
+2020-07-19 21:05:38,361 INFO     Average loss at batch 5100: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:05:48,550 INFO     Saved after 46 epochs in: models/augmented/java-sort-model/saved_model_iter46
+2020-07-19 21:05:48,615 INFO     Starting evaluation
+2020-07-19 21:05:52,643 INFO     Done evaluating, epoch reached
+2020-07-19 21:05:52,644 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:05:52,644 INFO     After 46 epochs -- top10_acc: [0.9046875  0.95       0.96796875 0.98125    0.9859375  0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.9046875, recall: 0.9046875, F1: 0.9046875
+2020-07-19 21:05:52,845 INFO     Average loss at batch 5200: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:06:03,098 INFO     Average loss at batch 5300: 0.000000, 	throughput: 312 samples/sec
+2020-07-19 21:06:04,400 INFO     Saved after 47 epochs in: models/augmented/java-sort-model/saved_model_iter47
+2020-07-19 21:06:04,467 INFO     Starting evaluation
+2020-07-19 21:06:08,487 INFO     Done evaluating, epoch reached
+2020-07-19 21:06:08,488 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:06:08,488 INFO     After 47 epochs -- top10_acc: [0.9046875  0.95078125 0.96796875 0.98125    0.9859375  0.99296875
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.9046875, recall: 0.9046875, F1: 0.9046875
+2020-07-19 21:06:17,571 INFO     Average loss at batch 5400: 0.000000, 	throughput: 221 samples/sec
+2020-07-19 21:06:20,242 INFO     Saved after 48 epochs in: models/augmented/java-sort-model/saved_model_iter48
+2020-07-19 21:06:20,308 INFO     Starting evaluation
+2020-07-19 21:06:24,330 INFO     Done evaluating, epoch reached
+2020-07-19 21:06:24,331 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:06:24,331 INFO     After 48 epochs -- top10_acc: [0.90625    0.9515625  0.96875    0.98046875 0.9859375  0.99296875
+ 0.9953125  0.99921875 1.         1.        ], precision: 0.90625, recall: 0.90625, F1: 0.90625
+2020-07-19 21:06:32,114 INFO     Average loss at batch 5500: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:06:36,108 INFO     Saved after 49 epochs in: models/augmented/java-sort-model/saved_model_iter49
+2020-07-19 21:06:36,174 INFO     Starting evaluation
+2020-07-19 21:06:40,282 INFO     Done evaluating, epoch reached
+2020-07-19 21:06:40,283 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:06:40,284 INFO     After 49 epochs -- top10_acc: [0.90703125 0.95078125 0.96875    0.98046875 0.9859375  0.99296875
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90703125, recall: 0.90703125, F1: 0.90703125
+2020-07-19 21:06:46,714 INFO     Average loss at batch 5600: 0.000000, 	throughput: 219 samples/sec
+2020-07-19 21:06:51,980 INFO     Saved after 50 epochs in: models/augmented/java-sort-model/saved_model_iter50
+2020-07-19 21:06:52,046 INFO     Starting evaluation
+2020-07-19 21:06:56,134 INFO     Done evaluating, epoch reached
+2020-07-19 21:06:56,134 INFO     Evaluation time: 0H:0M:4S
+2020-07-19 21:06:56,135 INFO     After 50 epochs -- top10_acc: [0.90703125 0.9515625  0.96875    0.9796875  0.9859375  0.99296875
+ 0.99609375 0.99921875 1.         1.        ], precision: 0.90703125, recall: 0.90703125, F1: 0.90703125
+2020-07-19 21:07:01,219 INFO     Average loss at batch 5700: 0.000000, 	throughput: 220 samples/sec
+2020-07-19 21:07:06,064 INFO     Done training
+2020-07-19 21:07:06,272 INFO     Model saved in file: models/augmented/java-sort-model/saved_model
+2020-07-19 21:07:06,273 INFO     Training time: 0H:13M:30S
+
