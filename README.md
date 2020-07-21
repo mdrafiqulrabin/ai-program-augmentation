@@ -35,7 +35,7 @@ Given input and output path, create jar and execute jar.
 | <img src="https://github.com/mdrafiqulrabin/ai-program-augmentation/blob/master/augment/examples/function.png" alt="Function Augmentation" width="420"/>  |  <img src="https://github.com/mdrafiqulrabin/ai-program-augmentation/blob/master/augment/examples/statement.png" alt="Statement Augmentation" width="420"/> |
 :-------------------------:|:-------------------------:
 
-( An example of Function Augmentation (left) and Statement Augmentation (right). Check [here](https://github.com/mdrafiqulrabin/ai-program-augmentation/blob/master/augment/) for other types. )
+( An example of Function Augmentation (left) and Statement Augmentation (right). Check [here](https://github.com/mdrafiqulrabin/ai-program-augmentation/blob/master/augment/examples/) for other types. )
 
 # Results
 
