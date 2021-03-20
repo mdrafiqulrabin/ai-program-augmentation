@@ -51,3 +51,5 @@ Given input and output path, create jar and execute jar.
 •	code2vec: https://github.com/tech-srl/code2vec \
 •	SA: https://github.com/bdqnghi/ggnn.tensorflow#code-classification \
 •	javaparser: https://github.com/javaparser/javaparser 
+
+### Related Work: https://github.com/mdrafiqulrabin/tnpa-generalizability
